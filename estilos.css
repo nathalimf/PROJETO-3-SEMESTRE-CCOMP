@@ -8,10 +8,34 @@
 
 body {
   background-color: #f9f7fa;
+  background-image: url(https://i.pinimg.com/originals/72/85/57/7285572749461ad802cec43cf9db8838.gif);
+}
+
+.headerfixa {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #20104f;
+	display: block;
+}
+
+.profileicon img {
+	height: auto;
+	width: 60px;
+	border-radius: 50%;
+	border: #ffffff solid;
+	object-fit: cover;
+}
+
+.settingsicon img {
+	height: auto;
+	width: 40px;
+	padding-bottom: 10px;
 }
 
 header {
-    background-color: #7c77ba;
+    /* background-color: #7c77ba; */
+	background: radial-gradient(circle, rgba(112,128,210,1) 0%, rgba(38,12,82,1) 100%);
+	background-size: cover;
     height: 300px;
     width: 100%;
     padding: 20px;
@@ -20,6 +44,7 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
     color: #ffffff;
+
 }
 
 .titulo {
@@ -49,10 +74,17 @@ h1 {
     filter: drop-shadow(9px 9px 6px #140626);
 }
 
-.imgperfil h2, .imgperfil h3 {
+.imgperfil h2 {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 20px;
     display: block;
+}
+
+.imgperfil h3 {
+	margin: 10px 0;
+    font-size: 15px;
+    display: block;
+	opacity: 0.5;
 }
 
 .faixafav {
@@ -148,8 +180,8 @@ li {
 .rodape-contatos {
   color: #ffff;
   background-color: #0c0520;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,13 +189,19 @@ li {
 }
 
 .contato{
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
   padding-bottom: 10px;
 }
 
 .infos {
   padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.logos img {
+	height: auto;
+	width: 30px;
 }
 
 .logos{
@@ -176,6 +214,10 @@ li {
    height: 40px;
 }
 
+.email {
+	font-size: 10px;
+}
+
 .container {
 	background-color: #dddde6;
 	padding: 15px;
@@ -186,7 +228,7 @@ li {
 }
 
 #faixalista {
-	max-width: 250px;
+	max-width: 80%;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
