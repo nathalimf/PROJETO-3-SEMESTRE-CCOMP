@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: system-ui;
+}
+
+body {
+  background-color: #f9f7fa;
+}
+
+header {
+    background-color: #7c77ba;
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 140px;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-left: 15px;
+	margin-bottom: -15px;
+}
+
+.imgperfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+	padding-top: 30px;
+}
+
+.imgperfil img {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+    filter: drop-shadow(9px 9px 6px #140626);
+}
+
+.imgperfil h2, .imgperfil h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    display: block;
+}
+
+.faixafav {
+    padding-right: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+	padding-top: 40px;
+}
+
+#favfaixa {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+#dadosfav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+#nomefaixa, #nomecantor {
+    margin: 0;
+    font-size: 1em;
+}
+
+#img-faixa {
+    width: auto;
+    height: 140px;
+    border-radius: 10px;
+    filter: drop-shadow(9px 9px 6px #140626);
+}
+
+
+
+main {
+    border: none;
+    padding: 90px;
+    padding-left: 300px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+#playbutton {
+    height: 30px;
+    width: 20px;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+#playbutton:hover {
+    height: 30px;
+    width: 30px;
+}
+
+#exibir {
+    text-decoration: none;
+    color: rgb(91, 91, 91);
+}
+
+#exibir:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#likes{
+    color: rgb(91, 91, 91) ;
+    padding-bottom: 40px;
+}
+
+#faixalista:hover {
+    color: #260a4d;
+    font-weight: bold;
+}
+
+.rodape-contatos {
+  color: #ffff;
+  background-color: #0c0520;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contato{
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.infos {
+  padding-bottom: 5px;
+}
+
+.logos{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.facebook {
+   width: auto;
+   height: 40px;
+}
+
+.container {
+	background-color: #dddde6;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 20px;
+	display: block;
+	max-width: 45%;
+}
+
+#faixalista {
+	max-width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
