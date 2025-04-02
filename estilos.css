@@ -235,7 +235,7 @@ li {
 	display: inline-block;
 }
 
-body #body_login {
+#body_login {
     background-color: #f9f7fa;
     background-image: url(https://i.pinimg.com/originals/72/85/57/7285572749461ad802cec43cf9db8838.gif);
   
