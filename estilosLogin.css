@@ -12,6 +12,9 @@ body {
     background-size: cover;
     margin: 5%;
     padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 #logo {
@@ -45,17 +48,8 @@ body {
 
 h1 {
   text-align: center;
-/*   margin-top: 10px; */
 }
-/* 
-#sparkles {
-  justify-content: center;
-  display: flex;
-  height: 100px;
-  widght: auto;
-  top: -20px;
-}
- */
+
 .imagensicon {
   display: flex;
   justify-content: center;
