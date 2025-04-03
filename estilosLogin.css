@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  font-family: "Nunito";
+}
+
 #body_login {
     background-color: #f9f7fa;
     background-image: url(https://i.pinimg.com/originals/59/7f/86/597f865620b0cbdf2bd2231bf3aee453.gif);
