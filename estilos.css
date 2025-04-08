@@ -24,10 +24,11 @@
 .headerfixa {
 	padding-top: 6px;
 	padding-bottom: 5px;
-    padding-left: 10px;
+  padding-left: 10px;
 	background-color: #3d1e57;
 	display: flex;
-    max-width: 100%;
+  max-width: 100%;
+  border-bottom: #140426 3px solid;
 }
 
 .profileicon img {
@@ -41,8 +42,8 @@
 .settingsicon img {
 	height: auto;
 	width: 40px;
-    margin-top: 6px;
-    margin-left: 10px;
+  margin-top: 6px;
+  margin-left: 10px;
 }
 
 header {
@@ -69,16 +70,16 @@ header {
 }
 
 h1 {
-    padding-top: 30px;
-    padding-left: 15px;
-	margin-bottom: -15px;
+   padding-top: 30px;
+   padding-left: 15px;
+	 margin-bottom: -15px;
 }
 
 .imgperfil {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-	padding-top: 30px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
+	 padding-top: 30px;
 }
 
 .imgperfil img {
@@ -95,10 +96,10 @@ h1 {
 }
 
 .imgperfil h3 {
-	margin: 10px 0;
+	  margin: 10px 0;
     font-size: 15px;
     display: block;
-	opacity: 0.5;
+	  opacity: 0.5;
 }
 
 .faixafav {
@@ -107,7 +108,7 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     gap: 10px;
-	padding-top: 40px;
+	  padding-top: 40px;
 }
 
 #favfaixa {
