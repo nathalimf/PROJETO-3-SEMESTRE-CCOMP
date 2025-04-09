@@ -355,4 +355,5 @@ button:hover {
   background-color: white;
   color: #8254a1;
   border: 2px solid #8254a1;
+  transition: .4s;
 }
