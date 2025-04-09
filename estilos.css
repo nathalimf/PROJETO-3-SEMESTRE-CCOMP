@@ -9,8 +9,8 @@
 }
 
 .bodyhome {
-  background-color: #efe6ff;
-  background-image: url(https://i.pinimg.com/originals/72/85/57/7285572749461ad802cec43cf9db8838.gif);
+  background-color: #ffff;
+/*   background-image: url(https://i.pinimg.com/originals/72/85/57/7285572749461ad802cec43cf9db8838.gif); */
 }
 
 .bodyhome input {
@@ -25,10 +25,10 @@
 	padding-top: 6px;
 	padding-bottom: 5px;
   padding-left: 10px;
-	background-color: #3d1e57;
+	background-color: #63338a;
 	display: flex;
   max-width: 100%;
-  border-bottom: #140426 3px solid;
+  border-bottom: #f8f0ff 3px solid;
 }
 
 .profileicon img {
@@ -47,16 +47,16 @@
 }
 
 header {
-    background-color: #d4acf4;
-    background: radial-gradient(circle, rgba(240,202,255,1) 0%, rgba(98,50,136,1) 100%);    width: 100%;
+    background-color: #fe3867;
+/*     background: radial-gradient(circle, rgba(240,202,255,1) 0%, rgba(98,50,136,1) 100%);    width: 100%; */
     /* padding: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     color: #ffffff;
-    /* background-image: url(https://i.pinimg.com/originals/82/e1/c3/82e1c3ef244c292810706f56b7539243.gif);
-    background-position: center top;
+    background-image: url(https://i.pinimg.com/originals/63/4f/d0/634fd0ebb1e4b2dfa7328f11073d9866.gif);
+/*     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll; */
@@ -234,12 +234,13 @@ li {
 }
 
 .containerhome{
-	background-color: #ffffff;
+	background-color: #ffff;
 	padding: 15px;
 	border-radius: 5px;
 	margin: 10px;
 	display: block;
 	max-width: 45%;
+  border: #cbb6db solid;
 }
 
 #faixalista {
