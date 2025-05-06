@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações da Conta</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0; 
+            background-color: #f4f4f4;
+        }
+
+        .top-bar {
+            background-color: #000000; 
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .logo img {
+        width: 70px; 
+        height: auto; 
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 400px; 
+            font-size: 1em;
+        }
+
+        .top-bar-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .settings-icon {
+            margin-right: 15px;
+            font-size: 1.2em;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .profile-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .profile-image-preview {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ddd;
+            overflow: hidden;
+            margin-right: 5px;
+        }
+
+        .profile-image-preview img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture-preview-large {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .profile-picture-preview-large img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .upload-button {
+            background-color: #5235a3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .upload-button:hover {
+            background-color: #a19447;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .save-button {
+            background-color: #5235a3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .save-button:hover {
+            background-color: #a19447;
+        }
+
+        .character-count {
+            color: #999;
+            font-size: 0.8em;
+            text-align: right;
+            margin-top: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo"><img src="logo music.jpeg" alt="logo_img"></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquise por uma música, gênero ou artista...">
+        </div>
+        <div class="top-bar-actions">
+            <i class="fas fa-cog settings-icon"></i>
+            <a href="#" class="profile-link">
+                <div class="profile-image-preview">
+                    <img src="placeholder-profile-small.png" alt="Meu perfil" style="display: none;">
+                </div>
+                <span>Meu perfil</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Configurações da conta</h2>
+
+        <div class="profile-picture-section">
+            <div class="profile-picture-preview-large">
+                <img src="placeholder-profile.png" alt="Foto de perfil" style="display: none;">
+            </div>
+            <button class="upload-button">Escolher arquivo</button>
+            <input type="file" id="fileInput" style="display: none;">
+        </div>
+
+        <div class="form-group">
+ <label for="nome">Nome</label>
+<input type="text" id="nome" name="nome">
+</div>
+
+        <div class="form-group">
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais">
+        </div>
+
+        <div class="form-group">
+            <label for="sobre">Sobre mim</label>
+            <textarea id="sobre" name="sobre" maxlength="200"></textarea>
+            <div class="character-count">Máximo de 200 caracteres</div>
+        </div>
+
+        <button class="save-button">Salvar</button>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const uploadButton = document.querySelector('.upload-button');
+        const profilePicturePreviewLarge = document.querySelector('.profile-picture-preview-large img');
+        const profilePicturePreviewSmall = document.querySelector('.profile-image-preview img');
+        const sobreTextarea = document.getElementById('sobre');
+        const characterCount = document.querySelector('.character-count');
+
+        uploadButton.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    profilePicturePreviewLarge.src = e.target.result;
+                    profilePicturePreviewLarge.style.display = 'block';
+                    profilePicturePreviewSmall.src = e.target.result;
+                    profilePicturePreviewSmall.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            } else {
+                profilePicturePreviewLarge.style.display = 'none';
+                profilePicturePreviewLarge.src = '';
+                profilePicturePreviewSmall.style.display = 'none';
+                profilePicturePreviewSmall.src = '';
+            }
+        });
+
+        sobreTextarea.addEventListener('input', () => {
+            const currentLength = sobreTextarea.value.length;
+            characterCount.textContent = `Máximo de 200 caracteres (${currentLength})`;
+        });
+    </script>
+</body>
+</html>
