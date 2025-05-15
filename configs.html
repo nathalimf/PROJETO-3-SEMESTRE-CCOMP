@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações da Conta</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        
+        * {
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+            padding: 0;
+            font-family: system-ui;
+        }     
+
         body {
             font-family: sans-serif;
             margin: 0; 
@@ -12,8 +22,8 @@
         }
 
         .top-bar {
-            background-color: #000000; 
-            padding: 15px 20px;
+            background-color: #0c0520; 
+            padding: 6px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between; 
@@ -26,18 +36,10 @@
         }
 
         .logo img {
-        width: 70px; 
-        height: auto; 
+            width: 50px; 
+            height: auto; 
         }
-
-        .search-bar input[type="text"] {
-            padding: 8px 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 400px; 
-            font-size: 1em;
-        }
-
+        
         .top-bar-actions {
             display: flex;
             align-items: center;
@@ -111,7 +113,7 @@
         }
 
         .upload-button {
-            background-color: #5235a3;
+            background-color: #8254a1;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -121,7 +123,9 @@
         }
 
         .upload-button:hover {
-            background-color: #a19447;
+            background-color: white;
+            color: #8254a1;
+            border: 2px solid #8254a1;
         }
 
         .form-group {
@@ -150,7 +154,7 @@
         }
 
         .save-button {
-            background-color: #5235a3;
+            background-color: #8254a1;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -160,7 +164,7 @@
         }
 
         .save-button:hover {
-            background-color: #a19447;
+            background-color: #b43887;
         }
 
         .character-count {
@@ -174,10 +178,7 @@
 </head>
 <body>
     <div class="top-bar">
-        <div class="logo"><img src="logo music.jpeg" alt="logo_img"></div>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquise por uma música, gênero ou artista...">
-        </div>
+        <div class="logo"><a href="home.html"><img src="https://i.ibb.co/PzVSX17C/Chat-GPT-Image-30-de-abr-de-2025-10-00-35-1.png" alt="logo_img"></a></div>
         <div class="top-bar-actions">
             <i class="fas fa-cog settings-icon"></i>
             <a href="#" class="profile-link">
