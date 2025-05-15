@@ -21,12 +21,10 @@
 }
 
 .headerfixa {
-  padding-top: 6px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  background-color: #0c0520;
+  background-color: #0c0520; 
+  padding: 6px 20px;
   display: flex;
-  max-width: 100%;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -141,96 +139,12 @@ h1 {
   display: block;
   opacity: 0.5;
 }
-/* 
-.faixafav {
-  padding-right: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  padding-top: 18px;
-}
-
-#favfaixa {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: right;
-}
-
-#dadosfav {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: flex-end;
-  flex-direction: row-reverse;
-}
-
-#nomefaixa, #nomecantor {
-  margin: 0;
-  font-size: 1em;
-}
-
-#img-faixa {
-  width: auto;
-  height: 140px;
-  border-radius: 10px;
-  filter: drop-shadow(9px 9px 6px #1f182473);
-}
- */
-
 
 main {
   border: none;
   padding: 90px;
   padding-left: 300px;
   background-color: #FAF8FC;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 18px;
-  line-height: 38px;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
-
-#playbutton {
-  height: 30px;
-  width: 20px;
-  transition: height 0.3s ease, width 0.3s ease;
-}
-
-#playbutton:hover {
-  height: 30px;
-  width: 30px;
-}
-
-#exibir {
-  text-decoration: none;
-  color: rgb(91, 91, 91);
-}
-
-#exibir:hover {
-  color: black;
-  font-weight: bold;
-}
-
-#likes{
-  color: rgb(91, 91, 91) ;
-  padding-bottom: 40px;
-}
-
-#faixalista:hover {
-    color: #260a4d;
-    font-weight: bold;
 }
 
 .rodape-contatos {
@@ -403,7 +317,7 @@ button {
   background-color: #8254a1;
   color: white;
   font-weight: bold;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
   border: 2px solid white;
   margin-top: 20px;
