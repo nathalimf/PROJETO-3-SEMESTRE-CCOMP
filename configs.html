@@ -220,41 +220,7 @@
         <button class="save-button">Salvar</button>
     </div>
 
-    <script>
-        const fileInput = document.getElementById('fileInput');
-        const uploadButton = document.querySelector('.upload-button');
-        const profilePicturePreviewLarge = document.querySelector('.profile-picture-preview-large img');
-        const profilePicturePreviewSmall = document.querySelector('.profile-image-preview img');
-        const sobreTextarea = document.getElementById('sobre');
-        const characterCount = document.querySelector('.character-count');
-
-        uploadButton.addEventListener('click', () => {
-            fileInput.click();
-        });
-
-        fileInput.addEventListener('change', (event) => {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    profilePicturePreviewLarge.src = e.target.result;
-                    profilePicturePreviewLarge.style.display = 'block';
-                    profilePicturePreviewSmall.src = e.target.result;
-                    profilePicturePreviewSmall.style.display = 'block';
-                }
-                reader.readAsDataURL(file);
-            } else {
-                profilePicturePreviewLarge.style.display = 'none';
-                profilePicturePreviewLarge.src = '';
-                profilePicturePreviewSmall.style.display = 'none';
-                profilePicturePreviewSmall.src = '';
-            }
-        });
-
-        sobreTextarea.addEventListener('input', () => {
-            const currentLength = sobreTextarea.value.length;
-            characterCount.textContent = `Máximo de 200 caracteres (${currentLength})`;
-        });
-    </script>
+    <script src="script.js"></script>
+     
 </body>
 </html>
